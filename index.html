@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator<!-- ? --></title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Number 1:
+        <input type="text" id="num1" value=""/>
+        <p class="num1-err"></p>
+      </p>
+      <p>
+        Operations:
+        <!-- ? type, name, bỏ ID có đổi giao diện hông? -->
+        <input type="radio" name="operation" id="opr" value="+" />+
+        <input type="radio" name="operation" id="opr" value="-" />−
+        <input type="radio" name="operation" id="opr" value="*" />×
+        <input type="radio" name="operation" id="opr" value="/" />÷
+        <p class="opr-err"></p>
+      </p>
+      <p>
+        Number 2:
+        <input type="text" id="num2" value=""/>
+        <p class="num2-err"></p>
+      </p>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+    <!-- ? -->
+    <script src="index.js"></script>
+  </body>
+</html>
